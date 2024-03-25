@@ -4,9 +4,7 @@ import (
 	"context"
 )
 
-func main() {
-
-}
+func main() {}
 
 // FloodControl интерфейс, который нужно реализовать.
 // Рекомендуем создать директорию-пакет, в которой будет находиться реализация.
@@ -15,4 +13,3 @@ type FloodControl interface {
 	// кол-ва запросов согласно заданным правилам флуд контроля.
 	Check(ctx context.Context, userID int64) (bool, error)
 }
-E
